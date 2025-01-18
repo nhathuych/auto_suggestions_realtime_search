@@ -1,0 +1,18 @@
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+/home/nhathuy/.asdf/installs/ruby/3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-xo3xcl sitelibdir\=./.gem.20250118-13799-xo3xcl clean
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-xo3xcl sitelibdir\=./.gem.20250118-13799-xo3xcl
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.so
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-xo3xcl sitelibdir\=./.gem.20250118-13799-xo3xcl install
+/usr/bin/install -c -m 0755 cruby.so ./.gem.20250118-13799-xo3xcl/skiptrace/internal
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-xo3xcl sitelibdir\=./.gem.20250118-13799-xo3xcl clean
