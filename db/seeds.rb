@@ -8,16 +8,24 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 
-10.times do
-  Author.create(name: Faker::Book.unique.author)
-end
+ActiveRecord::Base.transaction do
+  5.times do
+    Author.create(name: Faker::Book.unique.author)
+  end
 
-author_ids = Author.pluck(:id)
+  author_ids = Author.pluck(:id)
 
-100.times do |i|
-  Book.create(
-    title: Faker::Book.title,
-    description: Faker::Quote.matz,
-    author_id: author_ids.sample
-  )
+  20.times do
+    Book.create(
+      title: Faker::Book.title,
+      description: Faker::Quote.matz,
+      author_id: author_ids.sample
+    )
+  end
+
+  # Index creation right at import time is not encouraged.
+  # Typically, you would call create_index! asynchronously (e.g. in a cron job)
+  # However, we are adding it here so that this usage example can run correctly.
+  Book.__elasticsearch__.create_index! # Create NoSQL for Elasticsearch.
+  Book.import # Sync the existing data into Elasticsearch. Must use a cron job.
 end

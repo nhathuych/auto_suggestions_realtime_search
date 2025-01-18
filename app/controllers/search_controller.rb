@@ -30,6 +30,8 @@ class SearchController < ApplicationController
   private
 
   def search_for_books
-    Book.limit(5)
+    return [] if params[:query].blank?
+
+    Book.search(params[:query]).records
   end
 end

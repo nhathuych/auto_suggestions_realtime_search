@@ -1,4 +1,5 @@
 <div class="border border-sky-100 rounded-lg p-4 mb-4">
   <h2><%= link_to book.title, book, class: "font-semibold text-lg text-blue-600" %></h2>
-  <p><%= book.description %></p>
+  <p><i><%= book.description %></i></p>
+  <p class="pt-2">Author: <b><%= book.author.name %></b></p>
 </div>

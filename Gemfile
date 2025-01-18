@@ -37,6 +37,8 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem "faker", "~> 3.4", ">= 3.4.2"
+gem "elasticsearch-model", "~> 8.0"
+gem "elasticsearch-rails", "~> 8.0"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

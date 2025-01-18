@@ -4,7 +4,7 @@ class BooksController < ApplicationController
 
   # GET /books or /books.json
   def index
-    @books = Book.limit(20)
+    @books = Book.includes(:author).order(id: :desc)
     @results = []
   end
 
@@ -54,7 +54,7 @@ class BooksController < ApplicationController
     @book.destroy!
 
     respond_to do |format|
-      format.html { redirect_to books_path, status: :see_other, notice: "Book was successfully destroyed." }
+      format.html { redirect_to root_path, status: :see_other, notice: "Book was successfully destroyed." }
       format.json { head :no_content }
     end
   end
