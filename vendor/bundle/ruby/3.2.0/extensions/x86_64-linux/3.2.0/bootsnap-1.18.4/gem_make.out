@@ -1,0 +1,22 @@
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+/home/nhathuy/.asdf/installs/ruby/3.2.2/bin/ruby extconf.rb
+checking for fdatasync() in unistd.h... yes
+checking for whether -D_GNU_SOURCE is accepted as CPPFLAGS... yes
+checking for whether -O3 is accepted as CFLAGS... yes
+checking for whether -std=c99 is accepted as CFLAGS... yes
+creating Makefile
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-ravum4 sitelibdir\=./.gem.20250118-13799-ravum4 clean
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-ravum4 sitelibdir\=./.gem.20250118-13799-ravum4
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.so
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-ravum4 sitelibdir\=./.gem.20250118-13799-ravum4 install
+/usr/bin/install -c -m 0755 bootsnap.so ./.gem.20250118-13799-ravum4/bootsnap
+
+current directory: /home/nhathuy/Desktop/BE/auto_suggestions_realtime_search/vendor/bundle/ruby/3.2.0/gems/bootsnap-1.18.4/ext/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250118-13799-ravum4 sitelibdir\=./.gem.20250118-13799-ravum4 clean
