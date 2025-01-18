@@ -5,6 +5,11 @@
 rails new auto_suggestions_realtime_search -d postgresql --css tailwind
 ```
 
+## Setup database
+```
+rails db:seed
+```
+
 ## Run (to debug easily)
 ```
 rails s
